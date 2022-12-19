@@ -4,9 +4,8 @@ const hoursDiv = document.querySelector('#hours div');
 const minutesDiv = document.querySelector('#minutes div');
 const secondsDiv = document.querySelector('#seconds div');
 
-// console.log(new Date().getTime());
+// const finalDate = new Date("February 1, 2023 00:01:00");
 const finalDate = new Date("January 1, 2023 00:01:00");
-// const finalDate = new Date("December 18, 2022 22:51:59");
 
 function restart(){
     let x = setInterval(function(){
