@@ -55,32 +55,53 @@ main{
     justify-content: space-between;
     >div{
         text-align: center;
-        align-items: center;
-        >div{
-            display: flex;
-            justify-content: center;
-            color: var(--pink);
-            min-height: 6.6rem;
-            min-width: 7rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 3.6rem;
-            background-color: var(--bg-brown);
-            border-radius: 0.4rem;
-        }
         p{
             font-size: 0.7rem;
             letter-spacing: 0.3rem;
             text-transform: uppercase;
             color: var(--gray);
         }
-        
+    }
+    .flip-card{
+        background-color: var(--bg-brown);
+        border-radius: 0.4rem;
+        min-width: 7rem;
+        // height:6.6rem ;
+        display: inline-flex;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+
+        *{
+                width: 100%;
+                // overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                color: var(--pink);
+                height: 6.6rem;
+                min-width: 4.8rem;
+                font-size: 3.6rem;
+                // background-color: var(--bg-brown);
+            }
+       
+        :nth-child(1){
+            z-index: 1;
+            justify-content: center;
+            position: relative;
+        }
+        :nth-child(2){
+            border-top: 0.5px solid #000000;
+            justify-content: flex-start;
+            position: absolute;
+            top:50%;
+        }
     }   
+
 }
 
 footer{
-    // height: 15%;
     justify-self: flex-end;
     display: inline-flex;
     justify-content: space-between;
@@ -122,14 +143,24 @@ footer{
         max-width: none;
         min-width:68.8rem;
         >div{
-            >div{
+             p{
+               font-size: 1.4rem;
+            }
+        }
+       
+        .flip-card{
+            min-width: 14.8rem;
+            height: 14rem;
+            border-radius: 0.8rem;
+            *{
                 font-size: 8rem;
-                width: 14.8rem;
-                height: 14rem;
+                width: 100%;
+                min-width: 8.2rem;
+                height: 100%;
             }
-            p{
-                font-size: 1.4rem;
-            }
+           
         }
     }
 }
+
+
