@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+:root {
+  --redhat-font: "Red Hat Text", sans-serif;
+  --bold: 700;
+  --gray: #8385A9;
+  --pink: #FB5E84;
+  --bg-black: hsl(234, 17%, 12%);
+  --white: #FFFFFF;
+  --bg-brown: #343650;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-black);
+  background-image: url("../images/pattern-hills.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  color: var(--white);
+  font-family: var(--redhat-font);
+  font-weight: var(--bold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+header {
+  height: 35%;
+  display: inline-flex;
+  align-items: center;
+}
+header h3 {
+  font-size: 1.8rem;
+  letter-spacing: 0.6rem;
+  max-width: 32.7rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main {
+  display: inline-flex;
+  min-height: 10rem;
+  height: 50%;
+  min-width: 32.7rem;
+  width: 30%;
+  justify-content: space-between;
+}
+main > div {
+  text-align: center;
+}
+main > div p {
+  font-size: 0.7rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+main .flip-card {
+  background-color: var(--bg-brown);
+  border-radius: 0.4rem;
+  min-width: 7rem;
+  display: inline-flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+main .flip-card *:not(.ball) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--pink);
+  height: 6.6rem;
+  min-width: 4.8rem;
+  font-size: 3.6rem;
+}
+main .flip-card .ball {
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: black;
+  border-radius: 100%;
+  position: absolute;
+  top: calc(50% - 0.3rem);
+}
+main .flip-card .left {
+  left: calc(0% - 0.3rem);
+}
+main .flip-card .right {
+  right: calc(0% - 0.3rem);
+}
+main .flip-card :nth-child(1) {
+  z-index: 1;
+  justify-content: center;
+  position: relative;
+}
+main .flip-card :nth-child(2) {
+  border-top: 0.5px solid #000000;
+  justify-content: flex-start;
+  position: absolute;
+  top: 50%;
+}
+
+footer {
+  justify-self: flex-end;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 13.6rem;
+}
+footer * {
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+footer *:hover {
+  cursor: pointer;
+}
+footer svg:hover path {
+  fill: var(--pink);
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-size: 100vw;
+  }
+  header {
+    height: 20%;
+  }
+  header h3 {
+    font-size: 2.2rem;
+    max-width: none;
+    min-width: 43.1rem;
+  }
+  main {
+    height: 60%;
+    max-width: none;
+    min-width: 68.8rem;
+  }
+  main > div p {
+    font-size: 1.4rem;
+  }
+  main .flip-card {
+    min-width: 14.8rem;
+    height: 14rem;
+    border-radius: 0.8rem;
+  }
+  main .flip-card *:not(.ball) {
+    font-size: 8rem;
+    width: 100%;
+    min-width: 8.2rem;
+    height: 100%;
+  }
+  main .flip-card .ball {
+    width: 1.2rem;
+    height: 1.2rem;
+    top: calc(50% - 0.6rem);
+  }
+  main .flip-card .left {
+    left: calc(0% - 0.6rem);
+  }
+  main .flip-card .right {
+    right: calc(0% - 0.6rem);
+  }
+}/*# sourceMappingURL=style.css.map */
