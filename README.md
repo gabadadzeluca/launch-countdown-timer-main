@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/gabadadzeluca/launch-countdown-timer-main)
-- Live Site URL: [](https://your-live-site-url.com)
+- Live Site URL: [Live URL](https://gabadadzeluca.github.io/launch-countdown-timer-main/)
 
 ## My process
 
